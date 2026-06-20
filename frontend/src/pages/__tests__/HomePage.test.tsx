@@ -31,7 +31,7 @@ describe('HomePage', () => {
 
   it('contains hero section with name', () => {
     renderHome()
-    expect(screen.getByText('Hareesh Y')).toBeInTheDocument()
+    expect(screen.getByText('Hareesh Yeluri')).toBeInTheDocument()
   })
 
   it('renders senior java developer role', () => {

@@ -3,7 +3,7 @@ import Section from '@/components/ui/Section'
 import Card from '@/components/ui/Card'
 import SkillsRadar from '@/components/sections/SkillsRadar'
 import AnimatedCounter from '@/components/ui/AnimatedCounter'
-import { TECH_AREAS } from '@/lib/constants'
+import { TECH_AREAS, CONTACT } from '@/lib/constants'
 
 export default function AboutPage() {
   return (
@@ -17,19 +17,33 @@ export default function AboutPage() {
           >
             <h3 className="font-heading text-2xl font-bold text-white">The Full Picture</h3>
             <p className="mt-4 leading-relaxed text-gray-300">
-              With over 8 years of experience in software engineering, I specialize in designing and
-              building distributed systems that handle millions of requests per second. My expertise
-              spans the entire backend ecosystem, from core Java to cloud-native architectures.
+              Senior Software Engineer with 6+ years of experience building enterprise-grade Open
+              Banking microservices, event-driven systems, and cloud-native platforms. Expertise
+              in OAuth2.0/OIDC security, Kafka streaming, and financial-grade API compliance
+              (FAPI/PSD2).
             </p>
             <p className="mt-4 leading-relaxed text-gray-300">
-              I am deeply passionate about event-driven architectures, domain-driven design, and
-              building systems that are both scalable and maintainable. I believe in writing clean,
-              testable code and fostering engineering excellence.
+              Proven track record at EQ Bank, CIBC, Rogers Communications, and Sobeys designing
+              secure, scalable backend systems with Spring Boot, Spring Security, and Spring Cloud.
+              I am passionate about event-driven architectures, CI/CD automation, and achieving
+              95%+ API test coverage.
             </p>
             <p className="mt-4 leading-relaxed text-gray-300">
-              When I am not coding, I mentor junior developers, contribute to open-source projects,
-              and explore the latest in AI and machine learning.
+              When I am not coding, I explore cloud-native technologies, mentor developers, and
+              stay current with emerging security standards in digital banking.
             </p>
+
+            <div className="mt-8 space-y-3">
+              <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-gray-500">Education</h4>
+              <Card>
+                <p className="font-medium text-white">Masters in Electrical & Computer Engineering</p>
+                <p className="text-sm text-gray-400">University of Windsor, Canada — April 2019</p>
+              </Card>
+              <Card>
+                <p className="font-medium text-white">Bachelors in Electronics & Communications Engineering</p>
+                <p className="text-sm text-gray-400">B.V. Raju Institute of Technology, Hyderabad — April 2016</p>
+              </Card>
+            </div>
           </motion.div>
 
           <motion.div
@@ -39,10 +53,10 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             {[
-              { label: 'Years in Tech', value: 8, suffix: '+' },
-              { label: 'Projects Delivered', value: 40, suffix: '+' },
-              { label: 'Happy Clients', value: 25, suffix: '+' },
-              { label: 'Commits This Year', value: 1200, suffix: '+' },
+              { label: 'Years in Tech', value: 6, suffix: '+' },
+              { label: 'Projects Delivered', value: 25, suffix: '+' },
+              { label: 'API Test Coverage', value: 95, suffix: '%' },
+              { label: 'Java Experience', value: 8, suffix: '+ yrs' },
             ].map((stat) => (
               <Card key={stat.label} className="text-center">
                 <AnimatedCounter target={stat.value} suffix={stat.suffix} />
