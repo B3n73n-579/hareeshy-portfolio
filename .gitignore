@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+.idea/
+*.iml
+.vscode/
+target/
+*.class
+*.jar
+*.war
+backend/HELP.md
+frontend/README.md
+*.sublime-workspace
